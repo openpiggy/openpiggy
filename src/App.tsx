@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import { invoke } from "@tauri-apps/api/tauri";
 import "./App.css";
+import "./styles/globals.css"
 
 function App() {
   const [greetMsg, setGreetMsg] = useState("");
@@ -31,7 +32,7 @@ function App() {
       <p>Click on the Tauri, Vite, and React logos to learn more.</p>
 
       <form
-        className="row"
+        className="row py-2 my-2"
         onSubmit={(e) => {
           e.preventDefault();
           greet();
@@ -41,8 +42,9 @@ function App() {
           id="greet-input"
           onChange={(e) => setName(e.currentTarget.value)}
           placeholder="Enter a name..."
+          className="px-2"
         />
-        <button type="submit">Greet</button>
+        <button type="submit" className="px-2">Greet</button>
       </form>
 
       <p>{greetMsg}</p>
