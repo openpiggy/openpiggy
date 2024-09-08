@@ -15,6 +15,7 @@ export default tseslint.config(
       ...tseslint.configs.recommended,
       pluginReact.configs.flat.recommended,
       jsxA11y.flatConfigs.recommended,
+      eslintConfigPrettier,
     ],
     files: ["**/*.{ts,tsx}"],
     settings: { react: { version: "detect" } },
@@ -36,5 +37,4 @@ export default tseslint.config(
       "react/jsx-uses-react": "off",
     },
   },
-  { eslintConfigPrettier },
 );
