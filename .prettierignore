@@ -1,0 +1,8 @@
+# Ignore artifacts:
+build
+coverage
+
+# Directory containing compiled files and executables
+target/
+
+pnpm-lock.yaml
