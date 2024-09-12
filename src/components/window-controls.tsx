@@ -33,7 +33,7 @@ function WindowControls({ className }: WindowControlsProps) {
       <Button
         variant={"ghost"}
         size={"icon"}
-        className="h-6 w-6 rounded-full p-1"
+        className="h-6 w-6 rounded-full p-1 hover:bg-red-100"
         onClick={() => appWindow.close()}
       >
         <X className="h-4 w-4" />
