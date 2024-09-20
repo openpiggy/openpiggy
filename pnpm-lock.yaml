@@ -23,6 +23,9 @@ importers:
       '@tauri-apps/plugin-store':
         specifier: ^2.0.0-rc
         version: 2.0.0-rc.1
+      '@tauri-apps/plugin-window-state':
+        specifier: ^2.0.0-rc
+        version: 2.0.0-rc.1
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
@@ -711,6 +714,9 @@ packages:
 
   '@tauri-apps/plugin-store@2.0.0-rc.1':
     resolution: {integrity: sha512-rW71Tkr7OifxoL8NkWgPy5Os4Gn3oJTbv/j/nJ03HDuYsq+F4+8kU8o4epRFJnr6VKmgB/2CtiacSC3dnSSRnA==}
+
+  '@tauri-apps/plugin-window-state@2.0.0-rc.1':
+    resolution: {integrity: sha512-fQG6G6G+b3mx2QE6dAFxl3iyKvz35DpGggIczKn+qRc4Mdjsb9y42iJMUpMpZAC2q9j8h3LfknguCacifVP5lA==}
 
   '@trivago/prettier-plugin-sort-imports@4.3.0':
     resolution: {integrity: sha512-r3n0onD3BTOVUNPhR4lhVK4/pABGpbA7bW3eumZnYdKaHkf1qEC+Mag6DPbGNuuh0eG8AaYj+YqmVHSiGslaTQ==}
@@ -3057,6 +3063,10 @@ snapshots:
       '@tauri-apps/api': 2.0.0-rc.4
 
   '@tauri-apps/plugin-store@2.0.0-rc.1':
+    dependencies:
+      '@tauri-apps/api': 2.0.0-rc.4
+
+  '@tauri-apps/plugin-window-state@2.0.0-rc.1':
     dependencies:
       '@tauri-apps/api': 2.0.0-rc.4
 
